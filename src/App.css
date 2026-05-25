@@ -1792,3 +1792,160 @@ footer {
     left 0.08s ease-out,
     top 0.08s ease-out;
 }
+
+.timeline {
+  position: relative;
+  max-width: 950px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #38bdf8,
+    rgba(56, 189, 248, 0.08)
+  );
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 22px;
+  margin-bottom: 26px;
+}
+
+.timeline-marker {
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.18);
+  z-index: 1;
+}
+
+.timeline-card {
+  padding: 28px;
+  border-radius: 26px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline-card span {
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.timeline-card h3 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.timeline-card p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.roadmap-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 42px;
+  align-items: start;
+}
+
+.roadmap-side-card {
+  position: sticky;
+  top: 120px;
+
+  padding: 34px;
+
+  border-radius: 30px;
+
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 35%),
+    rgba(15, 23, 42, 0.76);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.24),
+    0 0 45px rgba(56, 189, 248, 0.08);
+}
+
+.side-label {
+  color: #38bdf8;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.roadmap-side-card h3 {
+  margin: 14px 0;
+  font-size: 32px;
+}
+
+.roadmap-side-card p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.progress-block {
+  margin-top: 28px;
+}
+
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.progress-bar {
+  margin-top: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  width: 42%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.35);
+}
+
+.focus-list {
+  margin-top: 28px;
+}
+
+.focus-list span {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.focus-list ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+
+.focus-list li {
+  margin-top: 10px;
+  color: #e2e8f0;
+}

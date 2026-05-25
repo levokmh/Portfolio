@@ -50,24 +50,33 @@ function Home() {
 
     const roadmap = [
         {
-            month: "May 2026",
-            title: "Build first AI project",
-            text: "Created AI Comment Analyzer and learned Git, GitHub, Streamlit and Transformers.",
+            period: "Week 1",
+            title: "Started Web Development",
+            text: "Learned React, Vite and modern frontend basics while building my first portfolio.",
         },
+
         {
-            month: "June 2026",
-            title: "Create portfolio",
-            text: "Build and improve a modern React portfolio to showcase projects professionally.",
+            period: "Week 2",
+            title: "Built AI Comment Analyzer",
+            text: "Created a sentiment analysis dashboard using Python, Transformers, Streamlit and Plotly.",
         },
+
         {
-            month: "July 2026",
-            title: "Start AI CV Analyzer",
-            text: "Develop a resume analysis tool with PDF parsing, skill detection and job matching.",
+            period: "Month 1",
+            title: "Portfolio & UI Improvements",
+            text: "Focused on animations, responsive design, project structure and deployment.",
         },
+
         {
-            month: "August 2026",
-            title: "Strengthen fundamentals",
-            text: "Improve C, Linux, algorithms and software engineering fundamentals before 42.",
+            period: "Month 2",
+            title: "AI CV Analyzer",
+            text: "Building an AI-powered resume analysis tool with NLP, PDF parsing and job matching.",
+        },
+
+        {
+            period: "Next Goals",
+            title: "Cybersecurity & Systems",
+            text: "Improving Linux, networking, C programming and cybersecurity fundamentals before 42.",
         },
     ];
 
@@ -297,34 +306,64 @@ function Home() {
             </motion.section>
 
             <motion.section
-                id="roadmap"
-                className="section"
-                initial={{ opacity: 0, y: 35 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-            >
+  id="roadmap"
+  className="section roadmap-section"
+  initial={{ opacity: 0, y: 35 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.32, ease: "easeOut" }}
+>
+  <p className="section-label">Roadmap</p>
+  <h2>Current progression</h2>
 
-                <p className="section-label">Roadmap</p>
+  <div className="roadmap-layout">
+    <div className="timeline">
+      {roadmap.map((item) => (
+        <div className="timeline-item" key={item.period}>
+          <div className="timeline-marker"></div>
 
-                <h2>Current progression</h2>
+          <div className="timeline-card">
+            <span>{item.period}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
 
-                <div className="roadmap">
+    <aside className="roadmap-side-card">
+      <p className="side-label">Currently Building</p>
 
-                    {roadmap.map((item) => (
-                        <div className="roadmap-item" key={item.month}>
+      <h3>AI CV Analyzer</h3>
 
-                            <span>{item.month}</span>
+      <p>
+        Building an AI-powered resume analysis tool focused on skill detection,
+        profile scoring and job matching.
+      </p>
 
-                            <h3>{item.title}</h3>
+      <div className="progress-block">
+        <div className="progress-top">
+          <span>Progress</span>
+          <strong>42%</strong>
+        </div>
 
-                            <p>{item.text}</p>
+        <div className="progress-bar">
+          <span></span>
+        </div>
+      </div>
 
-                        </div>
-                    ))}
+      <div className="focus-list">
+        <span>Current focus</span>
 
-                </div>
-            </motion.section>
+        <ul>
+          <li>Resume parsing</li>
+          <li>AI scoring logic</li>
+          <li>Clean dashboard UI</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</motion.section>
 
             <motion.section
                 id="contact"
