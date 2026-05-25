@@ -1,16 +1,169 @@
-# React + Vite
+# LevoKMH Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern developer portfolio built with React, Vite and Framer Motion.
 
-Currently, two official plugins are available:
+Live website showcasing my projects, progression roadmap, AI work and frontend development journey before entering 42 School.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img width="100%" alt="Portfolio Preview" src="./preview.png" />
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Modern responsive UI
+- Animated hero section
+- Interactive terminal card
+- Featured projects section
+- Custom project thumbnails
+- Animated roadmap timeline
+- Smooth page transitions
+- Framer Motion animations
+- Clean dark futuristic design
+- Responsive layout
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- JavaScript
+- CSS3
+- Framer Motion
+
+### Tools
+
+- Git
+- GitHub
+- Vercel
+
+---
+
+## Projects Included
+
+### AI Comment Analyzer
+
+Sentiment analysis dashboard using:
+- Python
+- Streamlit
+- Transformers
+- Plotly
+- NLP
+
+### AI CV Analyzer
+
+Upcoming AI project focused on:
+- Resume parsing
+- Skill detection
+- AI scoring
+- Job matching
+
+### Portfolio Website
+
+Modern developer portfolio focused on:
+- UI/UX
+- animations
+- responsive design
+- frontend architecture
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/LevoKMH/portfolio.git
+```
+
+Open the project:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+---
+
+## Build
+
+Production build:
+
+```bash
+npm run build
+```
+
+Preview build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Folder Structure
+
+```bash
+src/
+ ├── assets/
+ ├── components/
+ ├── data/
+ ├── pages/
+ ├── App.jsx
+ ├── App.css
+ └── main.jsx
+```
+
+---
+
+## Roadmap
+
+- [x] Portfolio foundation
+- [x] Modern UI redesign
+- [x] Animated terminal section
+- [x] Featured projects section
+- [x] Responsive improvements
+- [ ] Live demos
+- [ ] Advanced animations
+- [ ] GitHub API integration
+- [ ] Project detail pages
+- [ ] Full mobile optimization
+
+---
+
+## Deployment
+
+Deployed with Vercel.
+
+---
+
+## Contact
+
+GitHub:
+https://github.com/LevoKMH
+
+Email:
+hec.g@icloud.com
+
+---
+
+## License
+
+This project is open source and available under the MIT License.

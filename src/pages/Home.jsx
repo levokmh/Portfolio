@@ -1,6 +1,7 @@
 import { Brain, Code2, TerminalSquare } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function Home() {
 
   const projects = [
     {
+      slug: "ai-comment-analyzer",
       title: "AI Comment Analyzer",
       status: "Completed",
       category: "AI / NLP",
@@ -29,6 +31,7 @@ function Home() {
       link: "https://github.com/LevoKMH/ai-comment-analyzer",
     },
     {
+      slug: "ai-cv-analyzer",
       title: "AI CV Analyzer",
       status: "Next Project",
       category: "AI / Career",
@@ -38,6 +41,7 @@ function Home() {
       link: "#",
     },
     {
+      slug: "portfolio-website",
       title: "Portfolio Website",
       status: "Currently Building",
       category: "Frontend",
@@ -98,7 +102,7 @@ function Home() {
           <div className="hero-brand">
             <div className="hero-brand-text">
               <h2>
-                <span className="brand-arrow">›</span> levokmh
+                <span className="brand-arrow">›</span> LevoKMH
               </h2>
               <p>AI Developer</p>
             </div>
@@ -265,7 +269,51 @@ function Home() {
                 <span className="status">{project.status}</span>
               </div>
 
+              <div className={`project-thumb ${project.slug}`}>
+                <div className="thumb-topbar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                {project.slug === "ai-comment-analyzer" && (
+                  <div className="thumb-dashboard">
+                    <div className="thumb-chart">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div className="thumb-pie"></div>
+                  </div>
+                )}
+
+                {project.slug === "ai-cv-analyzer" && (
+                  <div className="thumb-cv">
+                    <div className="thumb-score">85</div>
+                    <div className="thumb-lines">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                )}
+
+                {project.slug === "portfolio-website" && (
+                  <div className="thumb-site">
+                    <div className="thumb-hero-line"></div>
+                    <div className="thumb-hero-line small"></div>
+                    <div className="thumb-mini-cards">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                )}
+              </div>
+
               <h3>{project.title}</h3>
+
               <p>{project.description}</p>
 
               <div className="stack">
@@ -274,9 +322,9 @@ function Home() {
                 ))}
               </div>
 
-              <a href="/projects" className="project-link">
+              <Link to="/projects" className="project-link">
                 View all projects →
-              </a>
+              </Link>
             </motion.article>
           ))}
         </div>
@@ -320,7 +368,7 @@ function Home() {
             <div className="progress-block">
               <div className="progress-top">
                 <span>Progress</span>
-                <strong>42%</strong>
+                <strong>15%</strong>
               </div>
 
               <div className="progress-bar">
