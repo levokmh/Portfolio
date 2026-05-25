@@ -137,14 +137,29 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="hero-card">
-                    <p>Currently focused on</p>
+                <div className="terminal-card">
+                    <div className="terminal-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>levokmh@portfolio</p>
+                    </div>
 
-                    <h3>AI-powered applications</h3>
+                    <div className="terminal-body">
+                        <p><span>{">"}</span> whoami</p>
+                        <strong>Hector - AI Developer</strong>
 
-                    <span>
-                        Python • React • NLP • Data Visualization
-                    </span>
+                        <p><span>{">"}</span> current_focus</p>
+                        <strong>Building AI-powered applications</strong>
+
+                        <p><span>{">"}</span> stack</p>
+                        <strong>Python • React • NLP • Linux</strong>
+
+                        <p><span>{">"}</span> next_goal</p>
+                        <strong>42 School</strong>
+
+                        <div className="terminal-cursor"></div>
+                    </div>
                 </div>
             </motion.section>
 
@@ -306,64 +321,64 @@ function Home() {
             </motion.section>
 
             <motion.section
-  id="roadmap"
-  className="section roadmap-section"
-  initial={{ opacity: 0, y: 35 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.32, ease: "easeOut" }}
->
-  <p className="section-label">Roadmap</p>
-  <h2>Current progression</h2>
+                id="roadmap"
+                className="section roadmap-section"
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.32, ease: "easeOut" }}
+            >
+                <p className="section-label">Roadmap</p>
+                <h2>Current progression</h2>
 
-  <div className="roadmap-layout">
-    <div className="timeline">
-      {roadmap.map((item) => (
-        <div className="timeline-item" key={item.period}>
-          <div className="timeline-marker"></div>
+                <div className="roadmap-layout">
+                    <div className="timeline">
+                        {roadmap.map((item) => (
+                            <div className="timeline-item" key={item.period}>
+                                <div className="timeline-marker"></div>
 
-          <div className="timeline-card">
-            <span>{item.period}</span>
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
-          </div>
-        </div>
-      ))}
-    </div>
+                                <div className="timeline-card">
+                                    <span>{item.period}</span>
+                                    <h3>{item.title}</h3>
+                                    <p>{item.text}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
 
-    <aside className="roadmap-side-card">
-      <p className="side-label">Currently Building</p>
+                    <aside className="roadmap-side-card">
+                        <p className="side-label">Currently Building</p>
 
-      <h3>AI CV Analyzer</h3>
+                        <h3>AI CV Analyzer</h3>
 
-      <p>
-        Building an AI-powered resume analysis tool focused on skill detection,
-        profile scoring and job matching.
-      </p>
+                        <p>
+                            Building an AI-powered resume analysis tool focused on skill detection,
+                            profile scoring and job matching.
+                        </p>
 
-      <div className="progress-block">
-        <div className="progress-top">
-          <span>Progress</span>
-          <strong>42%</strong>
-        </div>
+                        <div className="progress-block">
+                            <div className="progress-top">
+                                <span>Progress</span>
+                                <strong>42%</strong>
+                            </div>
 
-        <div className="progress-bar">
-          <span></span>
-        </div>
-      </div>
+                            <div className="progress-bar">
+                                <span></span>
+                            </div>
+                        </div>
 
-      <div className="focus-list">
-        <span>Current focus</span>
+                        <div className="focus-list">
+                            <span>Current focus</span>
 
-        <ul>
-          <li>Resume parsing</li>
-          <li>AI scoring logic</li>
-          <li>Clean dashboard UI</li>
-        </ul>
-      </div>
-    </aside>
-  </div>
-</motion.section>
+                            <ul>
+                                <li>Resume parsing</li>
+                                <li>AI scoring logic</li>
+                                <li>Clean dashboard UI</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </motion.section>
 
             <motion.section
                 id="contact"

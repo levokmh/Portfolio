@@ -1949,3 +1949,82 @@ footer {
   margin-top: 10px;
   color: #e2e8f0;
 }
+
+.terminal-card {
+  padding: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  background: rgba(5, 8, 22, 0.82);
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.35),
+    0 0 55px rgba(56, 189, 248, 0.12);
+}
+
+.terminal-header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 18px;
+  background: rgba(255, 255, 255, 0.045);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.terminal-header span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.55);
+}
+
+.terminal-header p {
+  margin-left: 10px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.terminal-body {
+  padding: 28px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.terminal-body p {
+  color: #7dd3fc;
+  margin: 18px 0 6px;
+  font-size: 14px;
+}
+
+.terminal-body p:first-child {
+  margin-top: 0;
+}
+
+.terminal-body p span {
+  color: #38bdf8;
+}
+
+.terminal-body strong {
+  display: block;
+  color: #e2e8f0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.terminal-cursor {
+  width: 10px;
+  height: 20px;
+  margin-top: 22px;
+  background: #38bdf8;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
